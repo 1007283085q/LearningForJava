@@ -30,6 +30,7 @@ public class ProxyTest {
         printClassInfo(calculatorClazzMethods);
         System.out.println("\n");
 
+
         /**
          * Calculator实现类的Class对象
          */
@@ -44,6 +45,7 @@ public class ProxyTest {
         System.out.println("\n");
         System.out.println("------实现类Class的方法信息------");
         printClassInfo(calculatorImplClazzMethods);
+
     }
 
         public static void printClassInfo(Executable[] targets) {

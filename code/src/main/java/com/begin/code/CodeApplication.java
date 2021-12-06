@@ -9,10 +9,13 @@ public class CodeApplication {
     public static void main(String[] args) {
         try {
             SpringApplication.run(CodeApplication.class, args);
+
         }
         catch (Exception e){
             e.printStackTrace();
         }
     }
+    private void test(String s){
 
+    }
 }
