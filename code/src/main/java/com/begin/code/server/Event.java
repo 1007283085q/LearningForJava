@@ -1,5 +1,8 @@
 package com.begin.code.server;
 
+import org.springframework.stereotype.Controller;
+
+@Controller
 public class Event {
 
     private Thief thief;
