@@ -42,22 +42,35 @@ package editor.cn;
 
 /**
  * 无重复字符的最长子串
+ *
  * @author DY
  * @date 2022-07-17 23:04:54
  */
-public class P3_LongestSubstringWithoutRepeatingCharacters{
-	 public static void main(String[] args) {
-	 	 //测试代码
-	 	 Solution solution = new P3_LongestSubstringWithoutRepeatingCharacters().new Solution();
-	 }
-
-//力扣代码
-//leetcode submit region begin(Prohibit modification and deletion)
-class Solution {
-    public int lengthOfLongestSubstring(String s) {
-		return 1;
+public class P3_LongestSubstringWithoutRepeatingCharacters {
+    public static void main(String[] args) {
+        //测试代码
+        Solution solution = new P3_LongestSubstringWithoutRepeatingCharacters().new Solution();
+        System.out.println(solution.lengthOfLongestSubstring("abcdbcbb"));
     }
-}
+
+    //力扣代码
+//leetcode submit region begin(Prohibit modification and deletion)
+    class Solution {
+        public int lengthOfLongestSubstring(String s) {
+            int[] map = new int[256];
+            int max = 0;
+            int start = 0;
+            for (int i = 0; i < s.length(); i++) {
+                char c = s.charAt(i);
+                if (map[c] > 0) {
+                    max = Math.max(max, i - start);
+                    start = Math.max(start, map[c]);
+                }
+                map[c] = i + 1;
+            }
+            return Math.max(max, s.length() - start);
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
