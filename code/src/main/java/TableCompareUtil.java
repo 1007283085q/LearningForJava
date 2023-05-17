@@ -50,8 +50,8 @@ public class TableCompareUtil {
     };
 
     public static void main(String[] args) throws Exception {
-        DataBaseInfo prodDataBaseInfo = new DataBaseInfo("com.mysql.jdbc.Driver", "jdbc:mysql://172.21.96.51:3306/pms_hql", "root", "root@abc123", "脚本库", "pms_core_dev");
-        DataBaseInfo devDataBaseInfo = new DataBaseInfo("com.mysql.jdbc.Driver", "jdbc:mysql://172.21.96.51:3306/pms_core_dev", "root", "root@abc123", "测试库", "pms_hql");
+        DataBaseInfo prodDataBaseInfo = new DataBaseInfo("com.mysql.jdbc.Driver", "jdbc:mysql://172.21.96.51:3306/pms_sd_real_test", "root", "root@abc123", "现场库", "pms_sd_real_test");
+        DataBaseInfo devDataBaseInfo = new DataBaseInfo("com.mysql.jdbc.Driver", "jdbc:mysql://172.21.96.51:3306/pms_sd_test", "root", "root@abc123", "测试库", "pms_sd_test");
         compareTables(prodDataBaseInfo, devDataBaseInfo);
         writeFile("C:\\My");
     }
