@@ -106,6 +106,7 @@ public class AboutBlockingQueueTest {
             });
         }
     }
+
     private static class NamedThreadFactory implements ThreadFactory {
         private final AtomicInteger poolNumber = new AtomicInteger(1);
         private final AtomicInteger threadNumber = new AtomicInteger(1);
