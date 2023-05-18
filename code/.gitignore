@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+/src/leetCode/leetcode/editor/cn/doc/content/P3_LongestSubstringWithoutRepeatingCharacters .md
+/src/leetCode/leetcode/editor/cn/doc/content/P7_ReverseInteger.md
+/src/leetCode/leetcode/editor/cn/doc/content/P146_LruCache.md
+/src/leetCode/leetcode/editor/cn/doc/content/P146_LruCache .md
+/src/leetCode/leetcode/editor/cn/doc/content/P206_ReverseLinkedList.md
+/src/leetCode/leetcode/editor/cn/doc/content/P206_ReverseLinkedList .md
